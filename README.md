@@ -4,7 +4,7 @@
 - https://github.com/hilarybrown/behavior-app-api
 
 #### Back-end Deployed Heroku Site
-- https://enigmatic-coast-17636.herokuapp.com/
+- https://glacial-scrubland-58961.herokuapp.com/
 
 #### Front-end Repository
 - https://github.com/hilarybrown/behavior-app-client
