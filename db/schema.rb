@@ -10,10 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2) do
+ActiveRecord::Schema.define(version: 20171127003301) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "daily_charts", force: :cascade do |t|
+    t.date "date"
+    t.string "kid"
+    t.string "date_of_birth"
+    t.text "strengths"
+    t.binary "picture"
+    t.boolean "teeth_am"
+    t.boolean "bfast_dishes"
+    t.boolean "made_bed"
+    t.boolean "dressed"
+    t.boolean "drop_off"
+    t.boolean "no_fighting"
+    t.boolean "ate_dinner"
+    t.boolean "dinner_dishes"
+    t.boolean "pjs"
+    t.boolean "teeth_pm"
+    t.boolean "bed_success"
+    t.boolean "tv_mins"
+    t.text "comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_daily_charts_on_user_id"
+  end
 
   create_table "examples", force: :cascade do |t|
     t.text "text", null: false
@@ -33,5 +58,6 @@ ActiveRecord::Schema.define(version: 2) do
     t.index ["token"], name: "index_users_on_token", unique: true
   end
 
+  add_foreign_key "daily_charts", "users"
   add_foreign_key "examples", "users"
 end
