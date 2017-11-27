@@ -1,4 +1,4 @@
 class DailyChart < ApplicationRecord
   belongs_to :user
-  validates :date, :name, :user, presence: true
+  validates :date, :kid, :user, presence: true
 end
