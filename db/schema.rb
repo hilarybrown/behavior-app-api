@@ -10,29 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171127003301) do
+ActiveRecord::Schema.define(version: 20171130185423) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "daily_charts", force: :cascade do |t|
-    t.date "date"
+    t.string "date"
     t.string "kid"
     t.string "date_of_birth"
     t.text "strengths"
     t.binary "picture"
-    t.boolean "teeth_am"
-    t.boolean "bfast_dishes"
-    t.boolean "made_bed"
-    t.boolean "dressed"
-    t.boolean "drop_off"
-    t.boolean "no_fighting"
-    t.boolean "ate_dinner"
-    t.boolean "dinner_dishes"
-    t.boolean "pjs"
-    t.boolean "teeth_pm"
-    t.boolean "bed_success"
-    t.boolean "tv_mins"
+    t.string "teeth_am"
+    t.string "bfast_dishes"
+    t.string "made_bed"
+    t.string "dressed"
+    t.string "drop_off"
+    t.string "no_fighting"
+    t.string "ate_dinner"
+    t.string "dinner_dishes"
+    t.string "pjs"
+    t.string "teeth_pm"
+    t.string "bed_success"
+    t.string "tv_mins"
     t.text "comments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
