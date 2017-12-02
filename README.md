@@ -51,3 +51,11 @@ On the final day of coding, I realized I needed to change the data types of some
 | GET    | `/daily_charts/:id`    | `daily_charts#show` |
 | PATCH  | `/daily_charts/:id`    | `daily_charts#update` |
 | DELETE | `/daily_charts/:id`    | `daily_charts#destroy` |
+
+## Installation Instructions
+If you'd like to load this project from my GitHub to your own local device, you can:
+- Fork this GitHub Repository to your own GitHub account
+- Copy the repository link from your GitHub account
+- Navigate into a preferred folder in Terminal and run `clone <copied repository url>` on the command line
+- Run `npm install` on the command line to install any dependencies that may be associated
+- This should create a copy of the back-end API project into your GitHub as well as on your local device
